@@ -1,0 +1,163 @@
+```latex
+\documentclass[12pt,a4paper]{article}
+
+% --- Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage{caption}
+\usepackage{amsmath}
+
+\geometry{margin=1in}
+
+% --- Title information ---
+\title{\textbf{Software Engineering Project\\Final Report}}
+\author{Project Team: \textit{(fill in names)}}
+\date{\textit{Submission date: February 2, 2026}}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+\newpage
+
+\tableofcontents
+\newpage
+
+% -------------------------------------------------
+\section{Project scope}
+
+This section describes the scope of the project and the final set of implemented functionalities. The scope is expressed in the form of user stories together with acceptance criteria. If the scope evolved during the project, the most up-to-date version is presented below.
+
+\subsection*{User stories and acceptance criteria}
+
+\begin{longtable}{|p{0.35\textwidth}|p{0.45\textwidth}|p{0.15\textwidth}|}
+\hline
+\textbf{User story} & \textbf{Acceptance criteria} & \textbf{Status} \\
+\hline
+As a user, I want to create an account so that I can access personalized features. & The user can register using a valid email address and password. A confirmation message is displayed after successful registration. & Completed \\
+\hline
+As a user, I want to log in to the application so that I can use its main functionalities. & The user can log in using registered credentials and is redirected to the main dashboard. & Completed \\
+\hline
+As a user, I want to perform the core operation of the app so that I can achieve the main goal of the system. & The operation completes successfully and produces the expected output without errors. & Completed / Not done \\
+\hline
+\end{longtable}
+
+% -------------------------------------------------
+\section{Comparison with existing solutions}
+
+This section compares the final version of the application with existing related solutions. The comparison focuses on available functionalities, usability, and novelty.
+
+Unlike existing solutions, our application provides:
+\begin{itemize}
+    \item \textbf{(Example)} A simplified user interface focused on ease of use.
+    \item \textbf{(Example)} A unique feature that is not commonly available in similar applications.
+    \item \textbf{(Example)} Better integration with external services or APIs.
+\end{itemize}
+
+The main novelty of the project lies in \textit{(describe what differentiates your app from others)}.
+
+% -------------------------------------------------
+\section{Tech stack}
+
+This section describes the final technology stack used in the project, including frameworks, libraries, programming languages, and tools.
+
+\begin{itemize}
+    \item \textbf{Frontend:} e.g., React \texttt{v18.2.0}, HTML5, CSS3
+    \item \textbf{Backend:} e.g., Node.js \texttt{v20.x}, Express \texttt{v4.x}
+    \item \textbf{Database:} e.g., PostgreSQL \texttt{v15} / SQLite
+    \item \textbf{Mobile/Web platform:} Android (minimum API level XX) or Web browser
+    \item \textbf{Other tools:} Docker, Git, GitHub, Postman, etc.
+\end{itemize}
+
+% -------------------------------------------------
+\section{Database diagram}
+
+This section presents the database diagram for the final version of the application.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{database_diagram.png}
+    \caption{Database diagram of the final application}
+\end{figure}
+
+The database is structured around the following main entities:
+\begin{itemize}
+    \item \textbf{User} -- stores authentication and profile information.
+    \item \textbf{(Entity name)} -- describes the core data handled by the application.
+    \item \textbf{(Entity name)} -- stores relationships between users and system resources.
+\end{itemize}
+
+% -------------------------------------------------
+\section{Architecture diagram}
+
+This section describes the overall architecture of the application.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{architecture_diagram.png}
+    \caption{Architecture diagram of the final application}
+\end{figure}
+
+The application follows a \textit{(e.g., client--server / layered / MVC)} architecture. The frontend is responsible for user interaction, while the backend handles business logic, data processing, and communication with the database.
+
+% -------------------------------------------------
+\section{Test report}
+
+This section describes the testing process used during the project.
+
+The following types of tests were performed:
+\begin{itemize}
+    \item \textbf{Unit tests:} Testing individual components and functions.
+    \item \textbf{Integration tests:} Verifying communication between system components.
+    \item \textbf{Acceptance tests:} Ensuring that the application meets the defined acceptance criteria.
+\end{itemize}
+
+Testing was performed using tools such as \textit{(e.g., Jest, JUnit, PyTest)}. The results confirmed that the core functionalities of the application work as expected.
+
+% -------------------------------------------------
+\section{Known issues}
+
+This section lists known issues and limitations of the final version of the application.
+
+\begin{itemize}
+    \item \textbf{Issue 1:} Description of the problem and its impact on the user.
+    \item \textbf{Workaround:} Steps the user can take to avoid or mitigate the issue.
+    \item \textbf{Issue 2:} Description of a partially implemented feature.
+\end{itemize}
+
+% -------------------------------------------------
+\section{Project assessment}
+
+This section provides a critical assessment of the project.
+
+The project achieved most of the initially planned goals. However, some functionalities were simplified or postponed due to time constraints and technical challenges. The main obstacles encountered included:
+\begin{itemize}
+    \item Limited development time
+    \item Learning curve associated with new technologies
+    \item Integration issues between system components
+\end{itemize}
+
+If the project were to be started again, more time would be allocated to early prototyping and testing.
+
+% -------------------------------------------------
+\section{Possible future improvements}
+
+This section outlines potential future improvements that could be implemented in subsequent versions of the application.
+
+\begin{itemize}
+    \item Adding new functionalities requested by users
+    \item Improving performance and scalability
+    \item Enhancing the user interface and user experience
+    \item Extending test coverage
+\end{itemize}
+
+% -------------------------------------------------
+\end{document}
+```
